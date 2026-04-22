@@ -23,7 +23,7 @@ public class RegisterTest extends BaseClass{
 	rp.enterConfirmPassword(pass);
 	rp.clicktforegister();
 	String actual=rp.getToastMessage();
-	String expected="Username already exi";
+	String expected="Username already exists";
 	Assert.assertEquals(actual, expected);
 	
 	}
