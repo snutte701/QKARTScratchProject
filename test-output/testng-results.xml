@@ -1,88 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-22T16:25:32 IST" name="Suite" finished-at="2026-04-22T16:26:10 IST" duration-ms="37722">
+  <suite started-at="2026-06-03T12:44:52 IST" name="Suite" finished-at="2026-06-03T12:45:16 IST" duration-ms="24293">
     <groups>
     </groups>
-    <test started-at="2026-04-22T16:25:32 IST" name="Test" finished-at="2026-04-22T16:26:10 IST" duration-ms="37722">
-      <class name="TestClasses.RegisterTest">
-        <test-method is-config="true" signature="browserinitialize()[pri:0, instance:TestClasses.RegisterTest@3b69e7d1]" started-at="2026-04-22T16:26:01 IST" name="browserinitialize" finished-at="2026-04-22T16:26:04 IST" duration-ms="3041" status="PASS">
+    <test started-at="2026-06-03T12:44:52 IST" name="Test" finished-at="2026-06-03T12:45:16 IST" duration-ms="24293">
+      <class name="TestClasses.HomeTest">
+        <test-method is-config="true" signature="browserinitialize()[pri:0, instance:TestClasses.HomeTest@2cd76f31]" started-at="2026-06-03T12:45:08 IST" name="browserinitialize" finished-at="2026-06-03T12:45:12 IST" duration-ms="4254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialize -->
-        <test-method signature="registeruser()[pri:0, instance:TestClasses.RegisterTest@3b69e7d1]" started-at="2026-04-22T16:26:04 IST" name="registeruser" finished-at="2026-04-22T16:26:09 IST" duration-ms="4757" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Username already exist] but found [Username already exists]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Username already exist] but found [Username already exists]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestClasses.RegisterTest.registeruser(RegisterTest.java:27)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registeruser -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestClasses.RegisterTest@3b69e7d1]" started-at="2026-04-22T16:26:09 IST" name="teardown" finished-at="2026-04-22T16:26:10 IST" duration-ms="1090" status="PASS">
+        <test-method signature="checkproduct(java.lang.String)[pri:0, instance:TestClasses.HomeTest@2cd76f31]" started-at="2026-06-03T12:45:12 IST" name="checkproduct" data-provider="getexceldata" finished-at="2026-06-03T12:45:15 IST" duration-ms="3051" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registeruser status=FAILURE method=RegisterTest.registeruser()[pri:0, instance:TestClasses.RegisterTest@3b69e7d1] output={null}]]]>
+                <![CDATA[Roadster Mens Running Shoes]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- TestClasses.RegisterTest -->
+        </test-method> <!-- checkproduct -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:TestClasses.HomeTest@2cd76f31]" started-at="2026-06-03T12:45:15 IST" name="captureResult" finished-at="2026-06-03T12:45:15 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkproduct status=SUCCESS method=HomeTest.checkproduct(java.lang.String)[pri:0, instance:TestClasses.HomeTest@2cd76f31] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.HomeTest@2cd76f31]" started-at="2026-06-03T12:45:15 IST" name="closeBrowser" finished-at="2026-06-03T12:45:16 IST" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestClasses.HomeTest -->
       <class name="TestClasses.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:32 IST" name="setupReport" finished-at="2026-04-22T16:25:32 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:44:51 IST" name="setupReport" finished-at="2026-06-03T12:44:52 IST" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="browserinitialize()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:32 IST" name="browserinitialize" finished-at="2026-04-22T16:25:44 IST" duration-ms="11781" status="PASS">
+        <test-method is-config="true" signature="browserinitialize()[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:44:52 IST" name="browserinitialize" finished-at="2026-06-03T12:44:59 IST" duration-ms="7248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialize -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:44 IST" name="setupPage" finished-at="2026-04-22T16:25:44 IST" duration-ms="397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:44 IST" name="logintest" data-provider="LoginData" finished-at="2026-04-22T16:25:49 IST" duration-ms="4296" status="PASS">
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:44:59 IST" name="logintest" data-provider="LoginData" finished-at="2026-06-03T12:45:03 IST" duration-ms="4104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,53 +63,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:49 IST" name="teardown" finished-at="2026-04-22T16:25:54 IST" duration-ms="5480" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:45:03 IST" name="captureResult" finished-at="2026-06-03T12:45:03 IST" duration-ms="30" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@75d4a5c2] output={null}]]]>
+                <![CDATA[[TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@3c9754d8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="browserinitialize()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:54 IST" name="browserinitialize" finished-at="2026-04-22T16:25:57 IST" duration-ms="2720" status="PASS">
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:45:03 IST" name="closeBrowser" finished-at="2026-06-03T12:45:05 IST" duration-ms="2127" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserinitialize -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:57 IST" name="setupPage" finished-at="2026-04-22T16:25:57 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:25:57 IST" name="logintest" data-provider="LoginData" finished-at="2026-04-22T16:26:00 IST" duration-ms="2559" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manoj bhalke]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Welcome#123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:26:00 IST" name="teardown" finished-at="2026-04-22T16:26:01 IST" duration-ms="1404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.String)[pri:0, instance:TestClasses.LoginTest@75d4a5c2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="eteardown()[pri:0, instance:TestClasses.LoginTest@75d4a5c2]" started-at="2026-04-22T16:26:10 IST" name="eteardown" finished-at="2026-04-22T16:26:10 IST" duration-ms="490" status="PASS">
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="eteardown()[pri:0, instance:TestClasses.LoginTest@3c9754d8]" started-at="2026-06-03T12:45:16 IST" name="eteardown" finished-at="2026-06-03T12:45:17 IST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eteardown -->

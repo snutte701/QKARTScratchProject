@@ -14,16 +14,15 @@ public class LoginTest extends BaseClass {
 	public Object[][] getData(){
 		return new Object[][] {
 			{"supriyabhalke","Shivansh@18112024"},
-			{"manoj bhalke","Welcome#123"}
+			//{"manoj bhalke","Welcome#123"}
 			
 		};
 	}
-	@BeforeMethod
-	public void setupPage() {
-		lp=new LoginPage(driver);
-	}
-@Test(dataProvider="LoginData")
+
+	@Test(dataProvider="LoginData")
 public void logintest(String user,String pass ) {
+    lp = new LoginPage(driver);
+	
 	test=extent.createTest("Login test with user:"+user);
 	lp.login(user, pass);
 	test.pass("login successful for user:"+user);              

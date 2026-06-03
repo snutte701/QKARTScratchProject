@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestClasses.RegisterTest">
+      <class name="TestClasses.HomeTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="eteardown"/>
+          <include name="checkproduct" invocation-numbers="0"/>
           <include name="browserinitialize"/>
-          <include name="registeruser"/>
-          <include name="teardown"/>
+          <include name="captureResult"/>
           <include name="setupReport"/>
         </methods>
-      </class> <!-- TestClasses.RegisterTest -->
+      </class> <!-- TestClasses.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

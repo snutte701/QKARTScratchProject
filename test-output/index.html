@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestClasses.RegisterTest" class="method navigator-link" hash-for-method="registeruser">registeruser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestClasses.LoginTest" class="method navigator-link" hash-for-method="logintest(supriyabhalke, Shivansh@18112024)">logintest(supriyabhalke, Shivansh@18112024)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestClasses.HomeTest" class="method navigator-link" hash-for-method="checkproduct(Roadster Mens Running Shoes)">checkproduct(Roadster Mens Running Shoes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestClasses.LoginTest" class="method navigator-link" hash-for-method="logintest(manoj bhalke, Welcome#123)">logintest(manoj bhalke, Welcome#123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestClasses.LoginTest" class="method navigator-link" hash-for-method="logintest(supriyabhalke, Shivansh@18112024)">logintest(supriyabhalke, Shivansh@18112024)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,26 +123,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestClasses.RegisterTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">TestClasses.HomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registeruser">
-                  </a> <!-- registeruser -->
-                  <span class="method-name">registeruser</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Username already exist] but found [Username already exists]
-	at TestClasses.RegisterTest.registeruser(RegisterTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="checkproduct(Roadster Mens Running Shoes)">
+                  </a> <!-- checkproduct(Roadster Mens Running Shoes) -->
+                  <span class="method-name">checkproduct</span>
+                  <span class="parameters">(Roadster Mens Running Shoes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,14 +151,6 @@
                   </a> <!-- logintest(supriyabhalke, Shivansh@18112024) -->
                   <span class="method-name">logintest</span>
                   <span class="parameters">(supriyabhalke,Shivansh@18112024)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logintest(manoj bhalke, Welcome#123)">
-                  </a> <!-- logintest(manoj bhalke, Welcome#123) -->
-                  <span class="method-name">logintest</span>
-                  <span class="parameters">(manoj bhalke,Welcome#123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,7 +168,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestClasses.LoginTest&quot;/&gt;
-      &lt;class name=&quot;TestClasses.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;TestClasses.HomeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -234,24 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registeruser')
-data.setCell(0, 2, 'TestClasses.RegisterTest')
-data.setCell(0, 3, 4757);
+data.setCell(0, 1, 'logintest')
+data.setCell(0, 2, 'TestClasses.LoginTest')
+data.setCell(0, 3, 4104);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logintest')
-data.setCell(1, 2, 'TestClasses.LoginTest')
-data.setCell(1, 3, 4296);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logintest')
-data.setCell(2, 2, 'TestClasses.LoginTest')
-data.setCell(2, 3, 2559);
+data.setCell(1, 1, 'checkproduct')
+data.setCell(1, 2, 'TestClasses.HomeTest')
+data.setCell(1, 3, 3051);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,7 +240,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestClasses.RegisterTest</span>
+              <span class="ignored-class-name">TestClasses.HomeTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setupReport</span>
                 <br/>
@@ -293,59 +263,45 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialize</span>
-                <span class="method-start">427 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setupPage</span>
-                <span class="method-start">12271 ms</span>
+                <span class="method-start">680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logintest(supriyabhalke, Shivansh@18112024)</span>
-                <span class="method-start">12676 ms</span>
+                <span class="method-start">7931 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">17000 ms</span>
+                <span class="method-name">captureResult([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">12097 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserinitialize</span>
-                <span class="method-start">22481 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setupPage</span>
-                <span class="method-start">25202 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logintest(manoj bhalke, Welcome#123)</span>
-                <span class="method-start">25237 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">27802 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">12128 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestClasses.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestClasses.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialize</span>
-                <span class="method-start">29211 ms</span>
+                <span class="method-start">16343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">registeruser</span>
-                <span class="method-start">32252 ms</span>
+                <span class="method-name">checkproduct(Roadster Mens Running Shoes)</span>
+                <span class="method-start">20598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=registeruser status=FAILURE method=RegisterTest.registeruser()[pri:0, instance:Test...)</span>
-                <span class="method-start">37020 ms</span>
+                <span class="method-name">captureResult([TestResult name=checkproduct status=SUCCESS method=HomeTest.checkproduct(java.lang.String)[pri:0, i...)</span>
+                <span class="method-start">23678 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23685 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestClasses.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">eteardown</span>
-                <span class="method-start">38160 ms</span>
+                <span class="method-start">24934 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

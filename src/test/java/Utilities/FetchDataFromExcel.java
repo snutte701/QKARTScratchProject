@@ -13,12 +13,13 @@ import ConstantsData.Constant;
 
 
 public class FetchDataFromExcel {	
-	@Test
 	public static String getData(int row,int col) throws IOException,FileNotFoundException{
 		FileInputStream fs=new FileInputStream(Constant.excelpath);
 		XSSFWorkbook workbook=new XSSFWorkbook(fs);
-		XSSFSheet sheet=workbook.getSheet("RegisterData");
+		XSSFSheet sheet=workbook.getSheet("productdetails");
 		String value=sheet.getRow(row).getCell(col).toString();
+		workbook.close();
+		fs.close();
 		return value;
 		
 		

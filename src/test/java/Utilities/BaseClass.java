@@ -1,4 +1,4 @@
-package Utilities;
+ package Utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -30,35 +31,51 @@ public static String url;
 public static WebDriver driver;
 public static ExtentReports extent;
 public static ExtentTest test;
-@BeforeSuite
+@BeforeSuite(alwaysRun = true)
 public void setupReport() {
+
+    System.out.println("SETTING UP EXTENT REPORT");
 	extent=ExtentManager.getReport();
+	System.out.println(extent);
 }
 @BeforeMethod(alwaysRun=true)
-public static void browserinitialize() {
-	try {
-		browserName = FetchDataFromProperty.readDataFromProperty().getProperty("browser");
-		url=FetchDataFromProperty.readDataFromProperty().getProperty("url");
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
-	
-	if(browserName.equalsIgnoreCase("chrome")) {
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		
-	}
-	else if(browserName.equalsIgnoreCase("firefox")) {
-		driver=new FirefoxDriver();
-		driver.manage().window().maximize();
-		
-	}
-	else{
-		driver=new EdgeDriver();
-		driver.manage().window().maximize();
-		
-}
-	driver.get(url);
+public void browserinitialize() {
+
+    try {
+
+        browserName = FetchDataFromProperty
+                .readDataFromProperty()
+                .getProperty("browser");
+
+        url = FetchDataFromProperty
+                .readDataFromProperty()
+                .getProperty("url");
+
+    }
+
+    catch (IOException e) {
+
+        e.printStackTrace();
+    }
+
+    if(browserName.equalsIgnoreCase("chrome")) {
+
+        driver = new ChromeDriver();
+    }
+
+    else if(browserName.equalsIgnoreCase("firefox")) {
+
+        driver = new FirefoxDriver();
+    }
+
+    else {
+
+        driver = new EdgeDriver();
+    }
+
+    driver.manage().window().maximize();
+
+    driver.get(url);
 }
 public static String PageTitle(){
 	String title=driver.getTitle();
@@ -81,11 +98,13 @@ public String CaptureToastMessage(By locator) {
 	String message=toast.getText();
 	return message;
 }
+public void clickelement(WebElement element) {
+	element.click();
+}
 
 
-@AfterMethod(alwaysRun=true)
-public void teardown(ITestResult result) throws IOException {
-	System.out.println("After method is executing");
+@AfterMethod
+public void captureResult(ITestResult result) throws IOException {
 	if(result.getStatus()==ITestResult.FAILURE) {
 		System.out.println("Inside Failure BLOCK");
 		String screenshotPath=takeScreenshot(result.getName());
@@ -96,7 +115,7 @@ public void teardown(ITestResult result) throws IOException {
 		else if(result.getStatus()==ITestResult.SUCCESS) {
 			System.out.println("Test is passed:"+result.getName());
 		}
-		driver.quit();	
+		
 	}
 public String takeScreenshot(String TestName) throws IOException {
 	if(driver==null) {
@@ -112,6 +131,14 @@ FileUtils.copyFile(src, dest);
 System.out.println("Screenshot method called");
 return filepath;
 
+}
+@AfterMethod(alwaysRun = true)
+public void closeBrowser() {
+
+    if(driver != null) {
+
+        driver.quit();
+    }
 }
 @AfterSuite
 public void eteardown() {

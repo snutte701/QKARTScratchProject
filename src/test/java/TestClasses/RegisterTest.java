@@ -11,7 +11,8 @@ import Utilities.BaseClass;
 import Utilities.FetchDataFromExcel;
 
 public class RegisterTest extends BaseClass{
-	@Test //Register+login
+	
+	@Test(groups="smoke") //Register+login
 	public void registeruser() throws IOException
 	{	
 	RegisterPage rp=new RegisterPage(driver);

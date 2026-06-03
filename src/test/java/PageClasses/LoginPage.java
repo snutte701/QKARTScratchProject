@@ -50,6 +50,7 @@ public class LoginPage extends BaseClass{
 	
 	//method combine to call
 	public void login(String user,String pass) {
+		test.info("Inside login method");
 		iniclicklogin();
 		test.info("entering username");
 		enterUsername(user);
